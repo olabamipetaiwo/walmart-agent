@@ -1,0 +1,81 @@
+{
+  "users": [
+    {
+      "id": "user_001",
+      "name": "Sarah Johnson",
+      "bank_balance": 1250.00,
+      "next_paycheck": {
+        "date": "2026-01-31",
+        "amount": 2800.00
+      },
+      "upcoming_bills": [
+        {"name": "Rent", "amount": 1200.00, "due_date": "2026-02-01"},
+        {"name": "Car Insurance", "amount": 150.00, "due_date": "2026-01-25"},
+        {"name": "Electricity", "amount": 85.00, "due_date": "2026-01-28"},
+        {"name": "Netflix", "amount": 15.99, "due_date": "2026-01-22"}
+      ],
+      "credit_tier": "good",
+      "bnpl_eligible": true
+    },
+    {
+      "id": "user_002",
+      "name": "Marcus Chen",
+      "bank_balance": 3500.00,
+      "next_paycheck": {
+        "date": "2026-02-15",
+        "amount": 4200.00
+      },
+      "upcoming_bills": [
+        {"name": "Mortgage", "amount": 1800.00, "due_date": "2026-02-01"},
+        {"name": "Car Payment", "amount": 450.00, "due_date": "2026-02-05"},
+        {"name": "Utilities", "amount": 200.00, "due_date": "2026-01-30"},
+        {"name": "Internet", "amount": 79.99, "due_date": "2026-01-25"}
+      ],
+      "credit_tier": "excellent",
+      "bnpl_eligible": true
+    },
+    {
+      "id": "user_003",
+      "name": "Emily Rodriguez",
+      "bank_balance": 420.00,
+      "next_paycheck": {
+        "date": "2026-01-24",
+        "amount": 1600.00
+      },
+      "upcoming_bills": [
+        {"name": "Rent", "amount": 950.00, "due_date": "2026-02-01"},
+        {"name": "Phone Bill", "amount": 65.00, "due_date": "2026-01-26"},
+        {"name": "Student Loan", "amount": 280.00, "due_date": "2026-01-28"}
+      ],
+      "credit_tier": "fair",
+      "bnpl_eligible": true
+    },
+    {
+      "id": "user_004",
+      "name": "David Kim",
+      "bank_balance": 8200.00,
+      "next_paycheck": {
+        "date": "2026-02-01",
+        "amount": 5500.00
+      },
+      "upcoming_bills": [
+        {"name": "Rent", "amount": 2200.00, "due_date": "2026-02-01"},
+        {"name": "Gym Membership", "amount": 49.99, "due_date": "2026-01-25"},
+        {"name": "Spotify", "amount": 10.99, "due_date": "2026-01-23"}
+      ],
+      "credit_tier": "excellent",
+      "bnpl_eligible": true
+    }
+  ],
+  "bnpl_config": {
+    "min_purchase_amount": 35.00,
+    "max_purchase_amount": 2000.00,
+    "payment_plans": [
+      {"installments": 4, "interval_weeks": 2, "fee_percent": 0},
+      {"installments": 6, "interval_weeks": 2, "fee_percent": 0},
+      {"installments": 12, "interval_months": 1, "fee_percent": 5}
+    ],
+    "eligible_categories": ["Electronics", "Household", "Furniture", "Clothing", "Sports"],
+    "ineligible_categories": ["Groceries", "Alcohol", "Tobacco", "Gift Cards"]
+  }
+}

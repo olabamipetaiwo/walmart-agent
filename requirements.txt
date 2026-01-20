@@ -1,0 +1,29 @@
+# Core ML/Vision
+torch>=2.0.0
+torchvision>=0.15.0
+ultralytics>=8.0.0
+
+# Image Processing
+opencv-python>=4.8.0
+Pillow>=10.0.0
+
+# OCR
+pytesseract>=0.3.10
+easyocr>=1.7.0
+
+# Web UI
+streamlit>=1.28.0
+
+# LLM & Agent Framework
+langchain>=0.1.0
+langchain-openai>=0.0.5
+
+# Utilities
+python-dateutil>=2.8.2
+fuzzywuzzy>=0.18.0
+python-Levenshtein>=0.21.0
+numpy>=1.24.0
+pandas>=2.0.0
+
+# Optional: For better Streamlit experience
+watchdog>=3.0.0
